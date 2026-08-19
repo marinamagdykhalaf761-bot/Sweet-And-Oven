@@ -1,1 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet & Oven | Fresh Bakery & Handcrafted Desserts</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #2b2b2b;
+      background-color: #ffffff;
+    }
+
+    /* Navbar Customization */
+    .ms-navbar {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .ms-brand {
+      font-weight: 700;
+      color: #8b263e; /* Warm Oven Rose */
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+    .nav-link {
+      color: #2b2b2b !important;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .nav-link:hover {
+      color: #b83b5e !important;
+    }
+
+    /* Hero Section */
+    .ms-hero {
+      background-color: #fff5f7;
+      border-radius: 4px;
+      padding: 3rem 2rem;
+    }
+
+    /* Cards Layout */
+    .ms-card {
+      border: 1px solid #e1e1e1;
+      border-radius: 4px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background-color: #ffffff;
+    }
+    .ms-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    }
+    .ms-card img {
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+
+    /* Primary Bakery Style Button */
+    .btn-ms {
+      background-color: #8b263e;
+      color: #ffffff;
+      font-weight: 500;
+      border-radius: 2px;
+      border: none;
+      padding: 0.5rem 1.25rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-ms:hover {
+      background-color: #b83b5e;
+      color: #ffffff;
+    }
+
+    /* Banner Middle */
+    .ms-banner {
+      background-color: #4a1525;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 3rem 2rem;
+    }
+
+    /* Footer */
+    .ms-footer {
+      background-color: #f8f9fa;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.88rem;
+    }
+    .ms-footer a {
+      color: #616161;
+      text-decoration: none;
+    }
+    .ms-footer a:hover {
+      color: #8b263e;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg ms-navbar py-3">
+    <div class="container">
+      <a class="ms-brand me-4" href="#">Sweet & Oven</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#baked-goods">Oven Baked</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sweet-treats">Sweet Treats</a></li>
+          <li class="nav-item"><a class="nav-link" href="#special-orders">Custom Orders</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#contact" class="btn-ms">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="my-4">
+    <div class="container">
+      <div class="ms-hero">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h1 class="fw-bold mb-3">Fresh From Our Oven To Your Table</h1>
+            <p class="text-secondary mb-4">Welcome to Sweet & Oven! We bake handcrafted cakes, artisanal pastries, and delicious sweet delights daily using premium ingredients.</p>
+            <a href="#baked-goods" class="btn-ms">Explore Bakery Menu</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80" class="img-fluid rounded shadow-sm" alt="Sweet and Oven Fresh Bakery">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Fresh Oven Baked Items -->
+  <section id="baked-goods" class="py-4">
+    <div class="container">
+      <h3 class="fw-bold mb-4">Fresh Oven Specialties</h3>
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 ms-card">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Golden Croissants">
+            <div class="card-body d-flex flex-column">
+              <h5 class="fw-bold fs-6">Golden Butter Croissants</h5>
+              <p class="card-text text-secondary small flex-grow-1">Flaky, buttery pastries baked fresh every morning in our traditional oven.</p>
+              <a href="#" class="btn-ms w-100 text-center mt-3">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 ms-card">
+            <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cinnamon Rolls">
+            <div class="card-body d-flex flex-column">
+              <h5 class="fw-bold fs-6">Oven Glazed Cinnamon Rolls</h5>
+              <p class="card-text text-secondary small flex-grow-1">Warm cinnamon rolls topped with rich cream cheese frosting and pecans.</p>
+              <a href="#" class="btn-ms w-100 text-center mt-3">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 ms-card">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Fresh Fruit Tarts">
+            <div class="card-body d-flex flex-column">
+              <h5 class="fw-bold fs-6">Artisanal Fruit Tarts</h5>
+              <p class="card-text text-secondary small flex-grow-1">Crisp baked pastry shells filled with vanilla custard and fresh berry toppings.</p>
+              <a href="#" class="btn-ms w-100 text-center mt-3">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 ms-card">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Freshly Baked Cookies">
+            <div class="card-body d-flex flex-column">
+              <h5 class="fw-bold fs-6">Chocolate Chip Cookies</h5>
+              <p class="card-text text-secondary small flex-grow-1">Soft-baked cookies stuffed with Belgian chocolate chunks and sea salt.</p>
+              <a href="#" class="btn-ms w-100 text-center mt-3">View Item</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Middle Banner -->
+  <section class="py-4">
+    <div class="container">
+      <div class="ms-banner">
+        <div class="row align-items-center g-4">
+          <div class="col-md-7">
+            <h2 class="fw-bold mb-3">Planning a Birthday or Special Event?</h2>
+            <p class="text-light opacity-75 mb-4">Let Sweet & Oven design your custom celebration cake and dessert tables with our special catering packages.</p>
+            <a href="#contact" class="btn-ms">Request Custom Order</a>
+          </div>
+          <div class="col-md-5">
+            <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Sweet and Oven Celebration Cakes">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Signature Sweets & Cakes -->
+  <section id="sweet-treats" class="py-4">
+    <div class="container">
+      <h3 class="fw-bold mb-4">Signature Sweets & Cakes</h3>
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 ms-card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Chocolate Fudge Cake">
+            <div class="card-body d-flex flex-column">
+              <h5 class="fw-bold fs-6">Belgian Chocolate Fudge Cake</h5>
+              <p class="card-text text-secondary small flex-grow-1">Rich, layered dark chocolate cake coated with silky fudge ganache.</p>
+              <a href="#" class="btn-ms w-100 text-center mt-3">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 ms-card">
+            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cupcake Box">
+            <div class="card-body d-flex flex-column">
+              <h5 class="fw-bold fs-6">Deluxe Cupcake Collection</h5>
+              <p class="card-text text-secondary small flex-grow-1">Assorted gourmet cupcakes featuring red velvet, salted caramel, and vanilla bean.</p>
+              <a href="#" class="btn-ms w-100 text-center mt-3">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 ms-card">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Glazed Donuts">
+            <div class="card-body d-flex flex-column">
+              <h5 class="fw-bold fs-6">Hand-Glazed Gourmet Donuts</h5>
+              <p class="card-text text-secondary small flex-grow-1">Light and airy yeast donuts topped with custom frostings and fillings.</p>
+              <a href="#" class="btn-ms w-100 text-center mt-3">View Item</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 ms-card">
+            <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Oriental Sweet Platter">
+            <div class="card-body d-flex flex-column">
+              <h5 class="fw-bold fs-6">Oriental Sweets Platter</h5>
+              <p class="card-text text-secondary small flex-grow-1">A delicious assortment of honey Baklava, Basbousa, and pistachios.</p>
+              <a href="#" class="btn-ms w-100 text-center mt-3">View Item</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="ms-footer mt-5 py-5">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-3">
+          <h6 class="fw-bold text-dark mb-3">Our Menu</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Oven Fresh Pastries</a></li>
+            <li class="mb-2"><a href="#">Celebration Cakes</a></li>
+            <li class="mb-2"><a href="#">Cupcakes & Donuts</a></li>
+            <li class="mb-2"><a href="#">Oriental Delights</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6 class="fw-bold text-dark mb-3">Customer Service</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Custom Orders</a></li>
+            <li class="mb-2"><a href="#">Event Catering</a></li>
+            <li class="mb-2"><a href="#">Delivery Info</a></li>
+            <li class="mb-2"><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6 class="fw-bold text-dark mb-3">About Sweet & Oven</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Our Story</a></li>
+            <li class="mb-2"><a href="#">Bakery Standards</a></li>
+            <li class="mb-2"><a href="#">Quality Promise</a></li>
+            <li class="mb-2"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6 class="fw-bold text-dark mb-3">Get In Touch</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Order Support</a></li>
+            <li class="mb-2"><a href="#">Locations</a></li>
+            <li class="mb-2"><a href="#">Privacy Policy</a></li>
+            <li class="mb-2"><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-top pt-4 text-center text-secondary">
+        <p class="mb-0">&copy; 2026 Sweet & Oven. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
